@@ -18,19 +18,13 @@ export default function LoginScreen() {
 
   return (
     <ScreenWrapper className="flex-1 justify-center px-6">
-      <View className="flex-row items-center">
+      <View className="mb-10 items-center">
         <Image 
-          source={require('../assets/logo.png')} 
-          className="w-10 h-10 mr-2 rounded-lg bg-surface" 
+          source={require('../../assets/logo.png')} 
+          className="w-20 h-20 mb-4 rounded-xl bg-surface" 
           resizeMode="contain" 
         />
-        <View>
-          <Text className="text-text font-bold text-lg leading-tight">Opti Bovino</Text>
-          <Text className="text-muted text-xs uppercase tracking-widest">Ciencia para tu hato</Text>
-        </View>
-      </View>
-      <View className="mb-10">
-        <Text className="text-4xl font-bold text-text mb-2">OpniBovino</Text>
+        <Text className="text-4xl font-bold text-text mb-2">Opti Bovino</Text>
         <Text className="text-base text-muted">Ingresa a tu cuenta para continuar</Text>
       </View>
 

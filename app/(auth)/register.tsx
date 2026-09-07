@@ -27,18 +27,12 @@ export default function RegisterScreen() {
 
   return (
     <ScreenWrapper className="flex-1 justify-center">
-      <View className="flex-row items-center">
+      <View className="mb-8">
         <Image 
-          source={require('../assets/logo.png')} 
-          className="w-10 h-10 mr-2 rounded-lg bg-surface" 
+          source={require('../../assets/logo.png')} 
+          className="w-20 h-20 mb-4 rounded-xl bg-surface" 
           resizeMode="contain" 
         />
-        <View>
-          <Text className="text-text font-bold text-lg leading-tight">Opti Bovino</Text>
-          <Text className="text-muted text-xs uppercase tracking-widest">Ciencia para tu hato</Text>
-        </View>
-      </View>
-      <View className="mb-8">
         <Text className="text-3xl font-bold text-text mb-2">Crear Cuenta</Text>
         <Text className="text-base text-muted">Únete a OpniBovino</Text>
       </View>

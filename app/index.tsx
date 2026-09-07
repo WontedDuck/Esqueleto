@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { CustomButton } from '@/components/CustomButton';
+import { APP_CONFIG } from '@/src/config/app.config';
 
 export default function LandingScreen() {
   const router = useRouter();
@@ -21,8 +22,8 @@ export default function LandingScreen() {
             resizeMode="contain" 
           />
           <View>
-            <Text className="text-text font-bold text-lg leading-tight">Opti Bovino</Text>
-            <Text className="text-muted text-xs uppercase tracking-widest">Ciencia para tu hato</Text>
+            <Text className="text-textbutton font-bold text-base">{APP_CONFIG.name}</Text>
+            <Text className="text-secondary text-[10px] uppercase tracking-widest">{APP_CONFIG.slogan}</Text>
           </View>
         </View>
 
