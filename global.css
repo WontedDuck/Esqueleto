@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+  --color-background: #EFF1ED; /* Fondo general de la app */
+  --color-primary: #373D20;    /* Color principal (botones, cabeceras) */
+  --color-secondary: #717744;  /* Color secundario (acentos, bordes) */
+  --color-surface: #FFFFFF;    /* Fondo de tarjetas o inputs */
+  --color-text: #373D20;       /* Texto principal */
+  --color-textinput: #373D20;  /* Texto input */
+  --color-textbutton: #FFFFFF; /* Texto button */
+  --color-muted: #766153;      /* Texto secundario o placeholders */
+  --color-error: #B00020;      /* Alertas y validaciones */
+}
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --color-background: #12140A; /* Fondo general de la app */
+    --color-primary: #8FA054;    /* Color principal (botones, cabeceras) */
+    --color-secondary: #A4AC75;  /* Color secundario (acentos, bordes) */
+    --color-surface: #1E2213;    /* Fondo de tarjetas o inputs */
+    --color-text: #EFF1ED;       /* Texto principal */
+    --color-textinput: #EFF1ED;  /* Texto input */
+    --color-textbutton: #12140A; /* Texto button */
+    --color-muted: #A88F7C;      /* Texto secundario o placeholders */
+    --color-error: #CF6679;      /* Alertas y validaciones */
+  }
+  }
+}
