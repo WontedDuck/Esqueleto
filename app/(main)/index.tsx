@@ -21,7 +21,7 @@ export default function DashboardScreen() {
         </TouchableOpacity>
         <Image source={require('../../assets/logo.png')} className="w-10 h-10 rounded-lg bg-surface mr-3" resizeMode="contain" />
         <View>
-          <Text className="text-textbutton font-bold text-base">{APP_CONFIG.name}</Text>
+          <Text className="text-text font-bold text-base">{APP_CONFIG.name}</Text>
           <Text className="text-secondary text-[10px] uppercase tracking-widest">{APP_CONFIG.slogan}</Text>
         </View>
       </View>
